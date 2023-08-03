@@ -1,0 +1,108 @@
+.banner{
+    background-image: url('../../assets//bannercha.jpg');
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    p{
+        font-family: 'Roboto', sans-serif;
+        width: 52%;
+        letter-spacing: -2px;
+        font-size: 45px;
+        font-weight: 600;
+        color: var(--header__bgcolor);
+        margin-left: 60px;
+        // padding-top: 50px;
+        user-select: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .banner{
+        p{
+            font-size: 42px;
+        }
+    }
+}
+@media screen and (max-width: 1100px){
+    .banner{
+        p{
+            font-size: 38px;
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    .banner{
+        p{
+            font-size: 35px;
+        }
+    }
+}
+@media screen and (max-width: 900px){
+    .banner{
+        p{
+            font-size: 30px;
+            padding: 0;
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .banner{
+        p{
+            font-size: 27px;
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .banner{
+        p{
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .banner{
+        p{
+            font-size: 22px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .banner{
+        background-color: rgb(237, 234, 65);
+        height: 194px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin: 10px;
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    .banner{
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin: 10px;
+        }
+    }
+}
+@media screen and (max-width: 300px){
+    .banner{
+        p{
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin: 10px;
+        }
+    }
+}

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700&display=swap');
+
+.header{
+    background-color: var(--header__bgcolor);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    color: var(--header__color);
+    padding:  18px 0;
+    .container{
+        justify-content: space-between;
+        display: flex;
+        width: 90%;
+        align-items: center;
+        .header__drop{
+                width: 50px;
+                height: 30px;
+                // background-color: red;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                display: none;
+            .drop__bor{
+                // background-color: red;
+                // width: 50px;
+                // height: 50px;
+                width: 100%;
+                height: 3px;
+                background-color: gray;
+                
+            }
+        }
+        .header__logo{
+            font-weight: 600;
+            a{
+                img{
+                    width: 40px;
+                    border-radius: 10px;
+                }
+            }
+            cursor: pointer;
+        }
+        .header__left{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            font-size: 19px;
+            font-weight: 400;
+            .header__menu{
+                display: flex;
+                ul{
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    list-style: none;
+                    li{
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        font-family: Arimo;
+                        user-select: none;
+                        a{
+                            text-decoration: none;
+                            color: var(--header__color);
+                            &:hover{
+                                color: aqua;
+                            }
+                        }
+                            
+                    }
+                    
+                }
+                .close{
+                    display: none;
+                }
+            }
+            
+            .header__language{
+                border: 1px solid ;
+                font-size: 25px;
+                border-radius: 5px ;
+                position: relative;
+                .select__language{
+                    justify-content: center;
+                    padding: 5px;
+                    padding-left: 10px;
+                    width: 80px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    user-select: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    svg{
+                        padding: -5px;
+                    }
+                }
+                .option__language{
+                    box-sizing: border-box;
+                    position: absolute;
+                    border-radius: 5px;
+                    background-color: var(--header__bgcolor);
+                    margin-top: 10px;
+                    padding: 5px 10px;
+                    border: 1px solid white;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    ul{
+                        user-select: none;
+                        cursor: pointer;
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        li{
+                            width: 54px;
+                        }:hover{
+                            background-color: yellowgreen;
+                            color: black;
+                            padding: 2px 5px;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    .header{
+        .container{
+            .header__logo{
+                a{
+                    img{
+                        width: 55px;
+                    }
+                }
+            }
+            .header__left{
+                gap: 20px;
+                font-size: 18px;
+                .header__menu{
+                    ul{
+                        gap: 20px;
+                    }
+                }
+                .header__language{
+                    .select__language{
+                        font-size: 20px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header{
+        .container{
+            .header__logo{
+                a{
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+            .header__left{
+                font-size: 15px;
+                .header__language{
+                    .select__language{
+                        width: 70px;
+                        padding: 5px;
+                        height: 30px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .header{
+        .container{
+            .header__logo{
+                a{
+                    img{
+                        width: 45px;
+                    }
+                }
+            }
+            .header__left{
+                gap: 18px;
+                font-size: 16px;
+                .header__menu{
+                    ul{
+                        gap: 10px;
+                    }
+                    
+                }
+               
+            }
+
+        }
+    }
+}
+@media screen and (max-width: 850px) {
+    .header{
+        .container{
+            
+            .header__drop{
+                display: flex;
+            }
+            .header__left{
+                gap: 18px;
+                font-size: 16px;
+                .header__menu{
+                    display: none;
+                    ul{
+                        // gap: 10px;
+                    }
+                }
+                .show{
+                    background-color: rgba($color: #000000, $alpha: 0.5);
+                    display: flex;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 777;
+                    width: 100%;
+                    height: 100vh;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        width: max-content;
+                        align-items: flex-start;
+                        padding: 40px 50px;
+                        background-color: var(--header__bgcolor);
+                    }   
+                    .close{
+                        position: absolute;
+                        display: block;
+                        right: 40px;
+                        cursor: pointer;
+                        top: 20px;
+                    }                 
+                }
+               
+            }
+
+        }
+    }
+}
+

@@ -1,0 +1,372 @@
+.service{
+    .service__banner{
+        background-image: url('../../assets//AdobeStock_462143164_Preview.jpeg');
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        .container{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .service__our{
+                color: white;
+                font-size: 80px;
+                font-family: sans-serif;
+                
+            }
+        }
+    }
+    .service__info{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        gap: 50px;
+        .info__left{
+            p{
+                color: gray;
+                font-size: 50px;
+                font-family: sans-serif; 
+            }
+            h6{
+                margin-top: 18px;
+                font-size: 18px;
+                font-weight: 500;
+                
+            }
+        }
+        .info__right{
+            background-color: rgb(202, 198, 198);
+            height: max-content;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 20px;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .service{
+        .service__banner{
+            background-size: cover;
+            background-repeat: no-repeat;
+            // height: 600px;
+            .container{
+                .service__our{
+                    color: white;
+                    font-size: 70px;
+                    font-family: sans-serif;
+                    
+                }
+            }
+        }
+        .service__info{
+            display: block;
+            gap: 50px;
+            margin-top: 20px;
+            .info__left{
+                width: 94%;
+                
+                margin: 0 auto;
+                p{
+                    color: gray;
+                    font-size: 48px;
+                    font-family: sans-serif; 
+                    width: 90%;
+                }
+                h6{
+                    margin-top: 18px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    
+                }
+            }
+            .info__right{
+                font-size: 15px;
+                padding: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px){
+    .service{
+        .service__banner{
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 600px;
+            .container{
+                .service__our{
+                    color: white;
+                    font-size: 60px;
+                    font-family: sans-serif;
+                    
+                }
+            }
+        }
+        .service__info{
+           
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .service{
+        .service__banner{
+            height: 550px;
+            .container{
+                .service__our{
+                    color: white;
+                    font-size: 55px;
+                    font-family: sans-serif;
+                    
+                }
+            }
+        }
+        .service__info{
+            margin-top: -30px;
+           
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .service{
+        .service__banner{
+            height: 500px;
+            .container{
+                .service__our{
+                    font-size: 50px;
+                }
+            }
+        }
+        .service__info{
+            margin-top: -40px;
+           
+        }
+    }
+}
+@media screen and (max-width: 650px){
+    .service{
+        .service__banner{
+            height: 480px;
+            .container{
+                .service__our{
+                    font-size: 45px;
+                }
+            }
+        }
+        .service__info{
+            margin-top: -0px;
+           
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .service{
+        .service__banner{
+            height: 430px;
+            .container{
+                .service__our{
+                    font-size: 45px;
+                }
+            }
+        }
+        .service__info{
+            margin-top: -40px;
+            .info__left{
+                p{
+                    font-size: 40px;
+                    font-family: sans-serif; 
+                }
+                h6{
+                    margin-top: 10px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    
+                }
+            }
+            .info__right{
+                padding: 15px;
+                margin-top: 15px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px){
+    .service{
+        .service__banner{
+            height: 380px;
+            .container{
+                .service__our{
+                    font-size: 40px;
+                }
+            }
+        }
+        .service__info{
+            margin: 0px;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .service{
+        .service__banner{
+            height: 350px;
+            .container{
+                .service__our{
+                    font-size: 36px;
+                }
+            }
+        }
+        .service__info{
+            margin: -20px;
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    .service{
+        .service__banner{
+            height: 320px;
+            .container{
+                .service__our{
+                    font-size: 32px;
+                }
+            }
+        }
+        .service__info{
+            margin-top: 5px;
+            .info__left{
+                p{
+                    font-size: 30px;
+                }
+                h6{
+                    font-size: 13px;
+                }
+            }
+            .info__right{
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px){
+    .service{
+        .service__banner{
+            height: 300px;
+            .container{
+                .service__our{
+                    font-size: 32px;
+                }
+            }
+        }
+        .service__info{
+            margin-top: -10px;
+            
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    .service{
+        .service__banner{
+            height: 280px;
+            .container{
+                .service__our{
+                    font-size: 28px;
+                }
+            }
+        }
+        .service__info{
+            margin-top: -20px;
+            .info__left{
+                p{
+                    font-size: 25px;
+                }
+                h6{
+                    font-size: 12px;
+                }
+            }
+            .info__right{
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 350px){
+    .service{
+        .service__banner{
+            height: 250px;
+            .container{
+                .service__our{
+                    font-size: 28px;
+                }
+            }
+        }
+        .service__info{
+            margin-top: -30px;
+            .info__left{
+                p{
+                    font-size: 25px;
+                }
+                h6{
+                    font-size: 12px;
+                }
+            }
+            .info__right{
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 310px){
+    .service{
+        .service__banner{
+            height: 220px;
+            .container{
+                .service__our{
+                    font-size: 28px;
+                }
+            }
+        }
+        .service__info{
+            margin-top: -30px;
+            .info__left{
+                p{
+                    font-size: 23px;
+                }
+                h6{
+                    font-size: 11px;
+                }
+            }
+            .info__right{
+                font-size: 11px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 260px){
+    .service{
+        .service__banner{
+            height: 170px;
+            .container{
+                .service__our{
+                    font-size: 28px;
+                }
+            }
+        }
+        .service__info{
+            margin-top: 0px;
+            .info__left{
+                p{
+                    font-size: 23px;
+                }
+                h6{
+                    font-size: 10px;
+                }
+            }
+            .info__right{
+                font-size: 11px;
+            }
+        }
+    }
+}
